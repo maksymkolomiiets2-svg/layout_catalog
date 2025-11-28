@@ -1,6 +1,4 @@
 :root {
-  --color-blue: #00acdc;
-  --color-black: #000;
   --link-height: 40px;
 }
 
@@ -20,7 +18,7 @@
 
 .nav {
   display: inline-flex;
-  color: #000;
+  color: $color-black2;
   line-height: 100%;
   align-items: center;
 }
@@ -43,7 +41,7 @@
 }
 
 .nav__link {
-  color: #000;
+  color: $color-black2;
   font-size: 12px;
   line-height: 60px;
   text-decoration: none;
@@ -52,7 +50,8 @@
 }
 
 .nav__link:hover {
-  color: var(--color-blue);
+  color: $color-blue;
+  transition: color 300ms, transform 300ms, background-color 300ms;
 }
 
 .nav__link.is-active::after {
@@ -63,9 +62,9 @@
   height: 4px;
   border-radius: 8px;
   width: 100%;
-  background: var(--color-blue);
+  background: $color-blue;
 }
 
 .is-active {
-  color: var(--color-blue);
+  color: $color-blue;
 }

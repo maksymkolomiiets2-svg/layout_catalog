@@ -2,18 +2,20 @@
   display: flex;
   &__star {
     display: flex;
-    align-items: center;
+
     background-position: center;
-    justify-content: center;
+
     background-repeat: no-repeat;
     background-image: url(../images/star-active.svg);
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
+    width: $width-height;
+    height: $width-height;
+    margin-right: $margin-right;
     background-size: contain;
   }
 
   &__star:nth-child(n + 5) {
     background-image: url(../images/star.svg);
   }
+  &__star:last-child {
+    margin-right: 0; }
 }
