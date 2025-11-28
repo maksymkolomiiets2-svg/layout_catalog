@@ -13,9 +13,9 @@ body {
 
 .container {
   display: grid;
-  padding-top: 50px 40px;
+  padding: $padding-container;
   grid-template-columns: repeat(1, $card-width);
-  gap: 46px 48px;
+  gap: $gap-container;
 
   justify-content: center;
 

@@ -18,7 +18,7 @@
 
 .nav {
   display: inline-flex;
-  color: $color-black2;
+  color: $color-black;
   line-height: 100%;
   align-items: center;
 }
@@ -41,7 +41,7 @@
 }
 
 .nav__link {
-  color: $color-black2;
+  color: $color-black;
   font-size: 12px;
   line-height: 60px;
   text-decoration: none;
@@ -51,7 +51,10 @@
 
 .nav__link:hover {
   color: $color-blue;
-  transition: color 300ms, transform 300ms, background-color 300ms;
+  transition:
+    color 300ms,
+    transform 300ms,
+    background-color 300ms;
 }
 
 .nav__link.is-active::after {
